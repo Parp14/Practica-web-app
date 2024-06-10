@@ -11,6 +11,7 @@
         width: 100%;
         object-fit: cover;  
       }
+      
     </style>
   </head>
 
@@ -28,7 +29,11 @@
 
       
       <h2 class="text-center mt-2 mb-4">Informacion adicional</h2>
-      <p class="lead">TODO nueva informacion adicinal</p>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
 
       
       <div class="text-center">
