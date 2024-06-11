@@ -10,6 +10,7 @@
         height: 360px;
         width: 100%;
         object-fit: cover;  
+        margin-bottom: 16px;
       }
       
     </style>
@@ -17,15 +18,27 @@
 
   
   <body>
+    {% include "nav.html" %}
+    <img class="img-fluid" id="banner" src="https://dfea3972-6543-4e4e-a63d-5e20185f2431-00-18usjovvyp5ju.janeway.replit.dev/static/banner.jpg" height="320">
     <div class="container">
       <h1 class="text-center mt-2 mb-2">La Ballena Apestosa</h1>
       
-      <img class="img-fluid" id="banner" src="https://dfea3972-6543-4e4e-a63d-5e20185f2431-00-18usjovvyp5ju.janeway.replit.dev/static/banner.jpg" height="320">
+      
       
       <h2 class="text-center mt-2 mb-4">Introducción</h2>
-      <p class="lead">En las profundidades del mar, Aurora, la ballena hembra, nadaba con gracia y majestuosidad. Sin embargo, había un pequeño problema: su aroma. No era el dulce perfume de las flores o la brisa marina; más bien, era un olor a pescado pasado. Las otras criaturas marinas se alejaban de ella, creando un espacio vacío a su alrededor</p>
-      <p class="lead">Aurora no entendía por qué todos huían. Ella solo quería amistad. Un día, mientras flotaba cerca de la superficie, conoció a Lucas, un delfín curioso. Lucas no se inmutó por el olor. En cambio, le sonrió y dijo: “Aurora, tu aroma es único. Es como una firma personal”.</p>
-      <p class="lead">Desde entonces, Aurora y Lucas se convirtieron en amigos inseparables. Juntos exploraron los misterios del mar, y Aurora aprendió que incluso los olores extraños pueden unir a las almas afines. Así que, aunque seguía siendo la ballena más apestosa del océano, Aurora encontró la verdadera belleza en su singularidad.</p>
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
+          <p class="lead">En las profundidades del mar, Aurora, la ballena hembra, nadaba con gracia y majestuosidad. Sin embargo, había un pequeño problema: su aroma. No era el dulce perfume de las flores o la brisa marina; más bien, era un olor a pescado pasado. Las otras criaturas marinas se alejaban de ella, creando un espacio vacío a su alrededor</p>
+          
+          
+        </div>
+        <div class="d-none d-md-block col-6">
+          <img class="img-fluid" src="/static/ballena1.jpg" style="height:360px;border-radius:4px">
+        </div>
+        <p class="lead">Aurora no entendía por qué todos huían. Ella solo quería amistad. Un día, mientras flotaba cerca de la superficie, conoció a Lucas, un delfín curioso. Lucas no se inmutó por el olor. En cambio, le sonrió y dijo: “Aurora, tu aroma es único. Es como una firma personal”.</p>
+        <p class="lead">Desde entonces, Aurora y Lucas se convirtieron en amigos inseparables. Juntos exploraron los misterios del mar, y Aurora aprendió que incluso los olores extraños pueden unir a las almas afines. Así que, aunque seguía siendo la ballena más apestosa del océano, Aurora encontró la verdadera belleza en su singularidad.</p>
+            
+      </div>
 
       
       <h2 class="text-center mt-2 mb-4">Informacion adicional</h2>
@@ -45,6 +58,6 @@
     </div>
 
 
-    
+    {% include "footer.html" %}
   </body>
 </html> 
